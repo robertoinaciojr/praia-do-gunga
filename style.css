@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --fonte-secundaria: 'Lato', sans-serif;
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(177, 174, 174);
+    font-family: var(--fonte-principal);
+}
+header{
+    height: 500px;
+    background-image: url('imagens/praia.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 3.5em;
+    font-family: var(--fonte-secundaria);
+    text-shadow: 2px 2px 2px black;
+    position: relative;
+    top: 50%;
+}
+
+section.normal{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+section.normal > h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+section.imagen{
+    height: 500px;
+    background-image: url('imagens/praia-001.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagen > p{
+    top: 70px;
+    left: 50px;
+    font-size: 27px;
+    padding: 8px;
+    color: white;
+    position: relative;
+    text-align: left;
+    text-indent: 20px;
+    text-shadow: 2px 2px 2px black;
+    width: 401px;
+    background-color: rgba(8, 8, 8, 0.226);
+}
+
+
+footer{
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(160, 21, 21);
+}
